@@ -1,6 +1,6 @@
-#TsCodeDom
+# TsCodeDom
 
-#####Typescript Code Dom for C# (alpha)
+##### Typescript Code Dom for C# (alpha)
 
 TsCodeDom is a .net implementation for where you can built / generate Typescript code based on an .net object model.
 
