@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96857BB1-9207-4188-A248-85763E34A9A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TsCodeDom</RootNamespace>
+    <AssemblyName>TsCodeDom</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\TsCodeImportType.cs" />
+    <Compile Include="Entities\TsCodeTypeReferenceConst.cs" />
+    <Compile Include="Entities\TsCodeExpressionStatement.cs" />
+    <Compile Include="Entities\TsCodeMemberComment.cs" />
+    <Compile Include="Entities\TsCodeMemberProperty.cs" />
+    <Compile Include="Entities\TsCodeSuperReferenceExpression.cs" />
+    <Compile Include="Entities\TsCodeTypeInlineMethod.cs" />
+    <Compile Include="Entities\TsCodeTypeInlineReference.cs" />
+    <Compile Include="Entities\TsCollectionBase.cs" />
+    <Compile Include="Entities\TsCodeAssignStatement.cs" />
+    <Compile Include="Entities\TsCodeAttributeDeclaration.cs" />
+    <Compile Include="Entities\TsCodeAttributeDeclarationTsCollection.cs" />
+    <Compile Include="Entities\TsCodeBase.cs" />
+    <Compile Include="Entities\TsCodeBinaryOperatorExpression.cs" />
+    <Compile Include="Entities\TsCodeComment.cs" />
+    <Compile Include="Entities\TsCodeCommentStatement.cs" />
+    <Compile Include="Entities\TsCodeCommentStatementCollection.cs" />
+    <Compile Include="Entities\TsCodeConditionStatement.cs" />
+    <Compile Include="Entities\TsCodeConstructor.cs" />
+    <Compile Include="Entities\TsCodeCreateAnonymousObjectExpression.cs" />
+    <Compile Include="Entities\TsCodeExpression.cs" />
+    <Compile Include="Entities\TsCodeExpressionCollection.cs" />
+    <Compile Include="Entities\TsCodeFieldReferenceExpression.cs" />
+    <Compile Include="Entities\TsCodeMemberField.cs" />
+    <Compile Include="Entities\TsCodeMemberMethod.cs" />
+    <Compile Include="Entities\TsCodeMethodInvokeExpression.cs" />
+    <Compile Include="Entities\TsCodeMethodReferenceExpression.cs" />
+    <Compile Include="Entities\TsCodeMethodReturnStatement.cs" />
+    <Compile Include="Entities\TsCodeNamespace.cs" />
+    <Compile Include="Entities\TsCodeNamespaceImport.cs" />
+    <Compile Include="Entities\TsCodeNamespaceImportCollection.cs" />
+    <Compile Include="Entities\TsCodeParameterDeclarationExpression.cs" />
+    <Compile Include="Entities\TsCodeParameterDeclarationExpressionCollection.cs" />
+    <Compile Include="Entities\TsCodePrimitiveExpression.cs" />
+    <Compile Include="Entities\TsCodeStatement.cs" />
+    <Compile Include="Entities\TsCodeStatementCollection.cs" />
+    <Compile Include="Entities\TsCodeThisReferenceExpression.cs" />
+    <Compile Include="Entities\TsCodeTypeDeclaration.cs" />
+    <Compile Include="Entities\TsCodeTypeDeclarationCollection.cs" />
+    <Compile Include="Entities\TsCodeTypeMember.cs" />
+    <Compile Include="Entities\TsCodeTypeMemberCollection.cs" />
+    <Compile Include="Entities\TsCodeTypeReference.cs" />
+    <Compile Include="Entities\TsCodeTypeReferenceCollection.cs" />
+    <Compile Include="Entities\TsCodeTypeReferenceLet.cs" />
+    <Compile Include="Entities\TsCodeTypeReferenceVar.cs" />
+    <Compile Include="Entities\TsCodeVariableDeclarationStatement.cs" />
+    <Compile Include="Entities\TsCodeVariableReferenceExpression.cs" />
+    <Compile Include="Entities\TsCodeWriteBase.cs" />
+    <Compile Include="Entities\TsGeneratorOptions.cs" />
+    <Compile Include="Entities\TsWriteInformation.cs" />
+    <Compile Include="Constants\TsDomConstants.cs" />
+    <Compile Include="Enumerations\TsCodeBinaryOperatorTypes.cs" />
+    <Compile Include="Enumerations\TsElementTypes.cs" />
+    <Compile Include="Enumerations\TsMemberAttributes.cs" />
+    <Compile Include="Enumerations\TsTypeAttributes.cs" />
+    <Compile Include="Mappings\TsBinaryOperatorMappings.cs" />
+    <Compile Include="Mappings\TsMemberAttributeMappings.cs" />
+    <Compile Include="Mappings\TsTypeAttributeMappings.cs" />
+    <Compile Include="Mappings\TsTypeMappings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeScriptProvider.cs" />
+    <Compile Include="Utils\TsDomUtils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
