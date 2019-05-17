@@ -59,7 +59,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TsCodeDom.csproj">
+    <ProjectReference Include="..\TsCodeDom\TsCodeDom.csproj">
       <Project>{96857bb1-9207-4188-a248-85763e34a9a9}</Project>
       <Name>TsCodeDom</Name>
     </ProjectReference>
